@@ -3,12 +3,13 @@ from pyboleto.data import BoletoData, CustomProperty
 
 
 class BoletoItau(BoletoData):
-    '''Implementa Boleto Itaú
+    """
+    Implementa Boleto Itaú
 
-        Gera Dados necessários para criação de boleto para o banco Itau
-        Todas as carteiras com excessão das que utilizam 15 dígitos: (106,107,
-        195,196,198)
-    '''
+    Gera Dados necessários para criação de boleto para o banco Itau
+    Todas as carteiras com excessão das que utilizam 15 dígitos: (106,107,
+    195,196,198)
+    """
 
     # Nosso numero (sem dv) com 8 digitos
     nosso_numero = CustomProperty('nosso_numero', 8)

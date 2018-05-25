@@ -18,9 +18,9 @@ from pyboleto.data import BoletoData, CustomProperty
 
 
 class BoletoSantander(BoletoData):
-    '''
-        Gera Dados necessários para criação de boleto para o banco Santander
-    '''
+    """
+    Gera Dados necessários para criação de boleto para o banco Santander
+    """
 
     nosso_numero = CustomProperty('nosso_numero', 12)
 

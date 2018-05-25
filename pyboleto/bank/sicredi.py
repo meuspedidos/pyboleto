@@ -3,9 +3,9 @@ from pyboleto.data import BoletoData, custom_property
 
 
 class BoletoSicredi(BoletoData):
-    '''
-        Gera Dados necessários para criação de boleto para o Banco Sicredi
-    '''
+    """
+    Gera Dados necessários para criação de boleto para o Banco Sicredi
+    """
     agencia_cedente = custom_property('agencia_cedente', 4)
     conta_cedente = custom_property('conta_cedente', 8)
     posto = custom_property('posto', 2)
@@ -14,13 +14,13 @@ class BoletoSicredi(BoletoData):
     nosso_numero = custom_property('nosso_numero', 8)
 
     def __init__(self):
-        '''
-            Construtor para boleto do Banco Sicredi
+        """
+        Construtor para boleto do Banco Sicredi
 
-            Args:
-                format_convenio Formato do convenio 6, 7 ou 8
-                format_nnumero Formato nosso numero 1 ou 2
-        '''
+        Args:
+            format_convenio Formato do convenio 6, 7 ou 8
+            format_nnumero Formato nosso numero 1 ou 2
+        """
         super(BoletoSicredi, self).__init__()
 
         self.codigo_banco = "748"

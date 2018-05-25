@@ -3,10 +3,10 @@ from pyboleto.data import BoletoData, CustomProperty
 
 
 class BoletoCaixaSigcb(BoletoData):
-    '''
-        Gera Dados necessários para criação de boleto para o banco Caixa
-        Economica Federal
-    '''
+    """
+    Gera Dados necessários para criação de boleto para o banco Caixa
+    Economica Federal
+    """
 
     agencia_cedente = CustomProperty('agencia_cedente', 4)
     conta_cedente = CustomProperty('conta_cedente', 6)

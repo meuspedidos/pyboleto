@@ -13,9 +13,9 @@ from pyboleto.data import BoletoData, CustomProperty
 
 
 class BoletoBradesco(BoletoData):
-    '''
-        Gera Dados necessários para criação de boleto para o banco Bradesco
-    '''
+    """
+    Gera Dados necessários para criação de boleto para o banco Bradesco
+    """
 
     nosso_numero = CustomProperty('nosso_numero', 11)
     agencia_cedente = CustomProperty('agencia_cedente', 4)

@@ -3,6 +3,9 @@ from pyboleto.data import BoletoData, CustomProperty
 
 
 class BoletoBanrisul(BoletoData):
+    """
+    Gera dados necessários para criação de boleto para o banco Banrisul
+    """
     conta_cedente = CustomProperty('conta_cedente', 6)
     nosso_numero = CustomProperty('nosso_numero', 8)
 
