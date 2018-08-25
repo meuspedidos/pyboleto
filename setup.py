@@ -20,8 +20,6 @@ def get_version(package):
                      ).group(1)
 
 
-
-
 setup(
     name='pyboleto',
     version=get_version('pyboleto'),
@@ -66,7 +64,6 @@ setup(
     platforms='any',
     test_suite='tests.alltests.suite',
     install_requires=[
-        'distribute',
         'reportlab'
     ],
     tests_require=[

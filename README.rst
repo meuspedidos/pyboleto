@@ -119,7 +119,7 @@ You can clone the repository by doing the following::
 Executing unittests
 ===================
 
-You need either setuptools or distribute in order to execute the tests. Chances are you already have one or another. You also need `pdftohtml`_.::
+You need setuptools in order to execute the tests. Chances are you already have one or another. You also need `pdftohtml`_.::
 
     $ cd pyboleto
     $ python setup.py test
